@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+:root{
+    --main_logo_color : #2db400;
+    --font_color : rgb(61,61,61);
+    --gray_font_color: rgb(153,153,153);
+    --line_divider_color:rgb(182,182,182);
+    --news_highlights_color: rgb(218,218,218);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ================= */
+/* Naver Search Bar with Logo */
+
+/* todo : reduce the search bar size */
+/* ================= */
+
+section {
+    width: 80%;
+    margin: 0.2rem auto;
+}
+
+section > .first_side{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+section > .first_side > p{
+    font-size: 1.1rem; 
+    color: var(--font_color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section > .first_side > p:hover{
+    text-decoration-line: underline;
+}
+
+section > .first_side > p > i{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    color: white;
+    box-shadow: 1px 2.5px 1.5px 1.5px rgb(129,129,129);
+    background-color: rgb(114,114,114);
+    border-radius: 1rem;
+}
+
+section > .first_side > span{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+section > .first_side > .junior_naver{
+    color: var(--gray_font_color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+
+section > .first_side > .happy_bean{
+    color: var(--gray_font_color);
+    font-weight: bold;
+}
+
+
+section > .first_side > .happy_bean:hover{
+    color: var(--main_logo_color);
+}
+
+section > .main_logo{
+    margin-top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    text-align: center;
+}
+
+section > .main_logo > img{
+    width: 280px;
+}
+
+section > .main_logo > #main_search_bar{
+    margin-left: 2rem;
+    position: relative;
+}
+
+section > .main_logo > #main_search_bar > input[type = "text"] {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1.8rem;
+    border: 1px solid var(--main_logo_color);
+}
+
+
+section > .main_logo > #main_search_bar > i {
+    margin:  0.5rem;
+    font-size: 2rem;
+    position: absolute;
+}
+
+section > .main_logo > #main_search_bar > .fa-keyboard{
+    top: 30%;
+    right: 15%;
+    color:  var(--gray_font_color);
+}
+
+section > .main_logo > #main_search_bar > .fa-caret-down{
+    top: 30%;
+    right: 10%;
+    color:  var(--main_logo_color);
+}
+
+section > .main_logo > #main_search_bar > div {
+    position: absolute;
+    background-color:  var(--main_logo_color);
+    width: 4.7rem;
+    height: 4.7rem;
+    font-size: 2rem;
+    color: white;
+    top: 17%;
+    right: 0;
+}
+
+section > .main_logo > #main_search_bar > div >  .fa-search {
+    margin-top: 25%;
+}
+
+/* ================= */
+/* End Naver Search Bar with Logo */
+/* ================= */
+
+.section_divider{
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    background-color: var(--line_divider_color);
+}
+
+/* ================= */
+/* Line Options Start */
+/* ================= */
+section > .main_option{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+section > .main_option > .option_green{
+    color : var(--main_logo_color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+section > .main_option > .option_black{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+section > .main_option > .option_more{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+}
+
+section > .main_option > .option_more > p> i{
+    color: var(--gray_font_color);
+}
+
+section > .main_option > .filter_more > p > i {
+    color: var(--gray_font_color);
+    margin-left: 0.3rem;
+    margin-right: 0.1rem;
+}
+/* ================= */
+/* End Line Options Start */
+/* ================= */
+
+.section_divider_bottom {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--line_divider_color);
+}
+
+/* ================= */
+/* Main content Start */
+/* ================= */
+
+.main_section {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+.main_section > .main_content > .covid_banner img{
+    width: 100%;
+}
+
+.main_section > .main_content > .news_highlights{
+    /* margin-top: 0.5rem; */
+    background-color: var(--news_highlights_color);
+    width: 100%;
+    height: 3rem;
+    margin: 0.5rem auto;
+    padding: 1rem;
+}
+
+
+.main_section > .main_content >.news_highlights p {
+font-weight: bold;
+}
+
+
+.main_section > .main_content > .news_highlights > p > .dynamic_news{
+    margin-left: 0.5rem;
+}
